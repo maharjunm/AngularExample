@@ -8,9 +8,9 @@ demoApp.controller('SimpleController1', function ($scope) {
     $scope.names=[{ 'name': 'maharjun', 'city': 'Anantapur' }, { 'name': 'some', 'city': 'Anantaram' }, { 'name': 'someother', 'city': 'Nalgonda' }, { 'name': 'me', 'city': 'Medak'}, { 'name': 'all', 'city': 'India' }]
 });
 
-//create controllers with controllers Variables
+// create controllers with controllers Variables
 var controllers = {};
-controllers.SimplerController2 = function ($scope) {
+controllers.SimpleController2 = function ($scope) {
     $scope.names=[{ 'name': 'maharjun', 'city': 'Anantapur' }, { 'name': 'some', 'city': 'Anantaram' }, { 'name': 'someother', 'city': 'Nalgonda' }, { 'name': 'me', 'city': 'Medak'}, { 'name': 'all', 'city': 'India' }]
 };
 demoApp.controller(controllers);
