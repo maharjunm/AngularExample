@@ -1,0 +1,13 @@
+<div class="container">
+    <h2> View 1 </h2>
+    Type to Search: <input type="text" data-ng-model="filter.name">
+    <ul>
+        <li data-ng-repeat="customer in names | filter:filter.name | orderBy:'name'"> {{customer.name}} - {{customer.city}}</li>
+    </ul>
+
+    Customer Name: <input type="text" data-ng-model="newCustomer.name"><br>
+    Customer City: <input type="text" data-ng-model="newCustomer.city"><br>
+    <button data-ng-click="addToCustomers()">Add Customer</button>
+
+    <a href="#/view2"> View2 </a>
+</div>
